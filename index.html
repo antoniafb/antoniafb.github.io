@@ -11,45 +11,13 @@
       rel="stylesheet"
     />
 
-    <!-- AOS (Animate On Scroll) CSS -->
+    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-    <style>
-      body {
-        scroll-behavior: smooth;
-      }
-      header {
-        background: linear-gradient(135deg, #007bff, #6610f2);
-        color: white;
-        text-align: center;
-        padding: 100px 20px;
-      }
-      header h1 {
-        font-size: 3rem;
-        font-weight: bold;
-      }
-      section {
-        padding: 80px 0;
-      }
-      .project-card,
-      .cert-card {
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
-      }
-      .project-card:hover,
-      .cert-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      }
-      footer {
-        background: #f8f9fa;
-        text-align: center;
-        padding: 20px;
-        margin-top: 50px;
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav
@@ -104,7 +72,7 @@
         <div class="col-md-4 text-center" data-aos="fade-right">
           <img
             src="foto.jpg"
-            alt="Antonia Febrianti"
+            alt="Foto profil Antonia Febrianti"
             class="rounded-circle shadow-sm"
             width="200"
             height="200"
@@ -213,11 +181,8 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000, // durasi animasi (ms)
-        once: true, // animasi hanya muncul sekali
-      });
-    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
   </body>
 </html>
