@@ -3,36 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Antonia | Portfolio</title>
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
+    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Navbar -->
-
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
     >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Antonia</a>
-
         <button
           class="navbar-toggler"
+          type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
@@ -41,19 +41,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">Tentang</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#skills">Keahlian</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#projects">Proyek</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#certificates">Sertifikat</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#contact">Kontak</a>
             </li>
@@ -63,164 +59,98 @@
     </nav>
 
     <!-- Header -->
-
-    <header class="hero">
-      <div class="container text-center">
+    <header>
+      <div class="container">
         <h1>Antonia Febrianti Bude</h1>
-
         <p>Mahasiswa Teknik Informatika | Cybersecurity Enthusiast</p>
-
-        <a href="#projects" class="btn btn-primary mt-3">Lihat Proyek</a>
       </div>
     </header>
 
     <!-- Tentang Saya -->
-
-    <section id="about" class="container section">
+    <section id="about" class="container">
       <div class="row align-items-center">
-        <div class="col-md-8" data-aos="fade-right">
+        <div class="col-md-8" data-aos="fade-left">
           <h2 class="fw-bold mb-4">Tentang Saya</h2>
-
-          <p>
-            Saya mahasiswa Teknik Informatika yang memiliki ketertarikan pada
-            bidang
-
-            <b>Cybersecurity</b>, <b>Web Development</b>, dan
-            <b>Network Security</b>. Saya tertarik mempelajari bagaimana
-            teknologi dapat meningkatkan keamanan sistem digital di Indonesia.
+          <p class="lead">
+            Saya mahasiswa Teknik Informatika yang memiliki ketertarikan dalam
+            bidang keamanan siber (cybersecurity) dan pengembangan sistem
+            berbasis web. Saya senang mempelajari bagaimana teknologi dapat
+            meningkatkan keamanan dan efisiensi digital di Indonesia.
           </p>
         </div>
-
-        <div class="col-md-4 text-center" data-aos="fade-left">
-          <img src="img/foto-nbg2.png" class="profile-img" />
+        <div class="col-md-4 text-center" data-aos="fade-right">
+          <img
+            src="img/foto-nbg2.png"
+            alt="Foto profil Antonia Febrianti"
+            class="shadow-sm"
+            width="200"
+            height="250"
+            style="object-fit: cover"
+          />
         </div>
       </div>
     </section>
 
-    <!-- Skills -->
-
-    <section id="skills" class="bg-light section">
-      <div class="container text-center">
+    <!-- Keahlian -->
+    <section id="skills" class="bg-light">
+      <div class="container text-center" data-aos="fade-up">
         <h2 class="fw-bold mb-5">Keahlian</h2>
-
         <div class="row g-4">
           <div class="col-md-3">
-            <div
-              class="card skill-card p-4"
-              data-bs-toggle="modal"
-              data-bs-target="#pythonModal"
-            >
-              <h5>Python</h5>
-
-              <p class="text-muted">Automation Tools</p>
-            </div>
+            <div class="card p-3">Python, PHP, JavaScript</div>
           </div>
-
           <div class="col-md-3">
-            <div
-              class="card skill-card p-4"
-              data-bs-toggle="modal"
-              data-bs-target="#webModal"
-            >
-              <h5>HTML CSS Laravel</h5>
-
-              <p class="text-muted">Web Development</p>
-            </div>
+            <div class="card p-3">HTML, CSS, Laravel</div>
           </div>
-
+          <div class="col-md-3"><div class="card p-3">MySQL</div></div>
           <div class="col-md-3">
-            <div
-              class="card skill-card p-4"
-              data-bs-toggle="modal"
-              data-bs-target="#mysqlModal"
-            >
-              <h5>MySQL</h5>
-
-              <p class="text-muted">Database</p>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div
-              class="card skill-card p-4"
-              data-bs-toggle="modal"
-              data-bs-target="#securityModal"
-            >
-              <h5>Cyber Security</h5>
-
-              <p class="text-muted">Ethical Hacking</p>
-            </div>
+            <div class="card p-3">Network Security, Ethical Hacking</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-
-    <section id="projects" class="container section">
-      <h2 class="fw-bold text-center mb-5">Proyek</h2>
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card project-card">
-            <div class="card-body">
-              <h5>Sistem Login OTP</h5>
-
-              <p>Sistem login dengan verifikasi OTP email.</p>
-
-              <p><b>Tech:</b> PHP, MySQL</p>
-
-              <a href="#" class="btn btn-dark">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card project-card">
-            <div class="card-body">
-              <h5>Portfolio Website</h5>
-
-              <p>Website portfolio responsive.</p>
-
-              <p><b>Tech:</b> HTML, CSS, Bootstrap</p>
-
-              <a href="#" class="btn btn-dark">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card project-card">
-            <div class="card-body">
-              <h5>Password Checker</h5>
-
-              <p>Program Python untuk mengecek keamanan password.</p>
-
-              <p><b>Tech:</b> Python</p>
-
-              <a href="#" class="btn btn-dark">GitHub</a>
-            </div>
+    <!-- Proyek -->
+    <section id="projects" class="container">
+      <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Proyek</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="zoom-in">
+          <div class="card project-card p-4">
+            <h4>Sistem Login Aman dengan OTP</h4>
+            <p>
+              Mengembangkan sistem login web dengan verifikasi OTP berbasis
+              email untuk meningkatkan keamanan pengguna.
+            </p>
+            <p><strong>Teknologi:</strong> PHP, MySQL, PHPMailer</p>
+            <a
+              href="https://github.com/username/project-otp"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Lihat di GitHub
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Sertifikat -->
-
-    <section id="certificates" class="bg-light section">
+    <section id="certificates" class="bg-light">
       <div class="container text-center">
-        <h2 class="fw-bold mb-5">Sertifikat</h2>
-
-        <div class="row g-3 justify-content-center">
-          <div class="col-md-4">
+        <h2 class="fw-bold mb-5" data-aos="fade-up">Sertifikat</h2>
+        <div class="row justify-content-center g-3">
+          <div class="col-md-5" data-aos="flip-left">
             <div class="card cert-card p-3">
-              Cyber Security Essentials – Cisco
+              <p class="fw-bold">
+                Cyber Security Essentials – Cisco Networking Academy (2025)
+              </p>
             </div>
           </div>
-
-          <div class="col-md-4">
+          <div class="col-md-5" data-aos="flip-right">
             <div class="card cert-card p-3">
-              Belajar Dasar Pemrograman Web – Dicoding
+              <p class="fw-bold">
+                Belajar Dasar Pemrograman Web – Dicoding (2024)
+              </p>
             </div>
           </div>
         </div>
@@ -228,107 +158,31 @@
     </section>
 
     <!-- Kontak -->
-
-    <section id="contact" class="container section text-center">
+    <section id="contact" class="container text-center" data-aos="fade-up">
       <h2 class="fw-bold mb-4">Kontak</h2>
-
-      <p>Email : buderianty31@gmail.com</p>
-
-      <p>LinkedIn : linkedin.com/in/antoniafebrianti</p>
-
-      <p>GitHub : github.com/antoniafebrianti</p>
+      <p>
+        Email:
+        <a href="mailto:buderianty31@gmail.com">buderianty31@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="#" target="_blank">linkedin.com/in/antoniafebrianti</a>
+      </p>
+      <p>GitHub: <a href="#" target="_blank">github.com/antoniafebrianti</a></p>
     </section>
 
     <!-- Footer -->
-
     <footer>
       <p>© 2026 Antonia Febrianti</p>
     </footer>
 
-    <!-- Modal Python -->
-
-    <div class="modal fade" id="pythonModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>Python Projects</h5>
-
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-            <p>Password Strength Checker</p>
-
-            <p>Network Scanner Tool</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Web -->
-
-    <div class="modal fade" id="webModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>Web Projects</h5>
-
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-            <p>Secure Login OTP System</p>
-
-            <p>Personal Portfolio Website</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal MySQL -->
-
-    <div class="modal fade" id="mysqlModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>Database Projects</h5>
-
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-            <p>Employee Database</p>
-
-            <p>User Authentication System</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Security -->
-
-    <div class="modal fade" id="securityModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5>Cyber Security Projects</h5>
-
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-
-          <div class="modal-body">
-            <p>Basic Penetration Testing Lab</p>
-
-            <p>Secure Authentication System</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+    <!-- Custom JS -->
     <script src="script.js"></script>
   </body>
 </html>

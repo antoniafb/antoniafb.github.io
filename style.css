@@ -1,48 +1,56 @@
 body {
-  font-family: Arial;
+  scroll-behavior: smooth;
 }
 
-.hero {
-  padding: 120px 0;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
+/* Header */
+header {
+  background: linear-gradient(135deg, #007bff, #6610f2);
   color: white;
   text-align: center;
+  padding: 100px 20px;
+}
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.section {
+/* Section spacing */
+section {
   padding: 80px 0;
 }
 
-.profile-img {
-  width: 200px;
-  border-radius: 10px;
+/* Card hover effect */
+.project-card,
+.cert-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-
-.skill-card {
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 15px;
-}
-
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background: #0d6efd;
-  color: white;
-}
-
-.project-card {
-  transition: 0.3s;
-}
-
-.project-card:hover {
+.project-card:hover,
+.cert-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
-  background: #111;
-  color: white;
+  background: #f8f9fa;
   text-align: center;
   padding: 20px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 60px 20px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
