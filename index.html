@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Antonia | Portfolio</title>
+    <title>Antonia Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -15,80 +17,48 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
-
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- NAVBAR -->
-
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Antonia</a>
-
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-
-          <button id="darkToggle" class="btn btn-sm btn-outline-dark ms-3">
-            <i class="bi bi-moon"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- HERO -->
+    <!-- HERO SECTION -->
 
     <section class="hero">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1 class="fw-bold">Hi, I'm <span class="name">Antonia</span></h1>
+          <!-- TEXT -->
 
-            <h3>I am <span id="typing"></span></h3>
+          <div class="col-lg-6 hero-text">
+            <h1>Hi, Saya <span class="name">Antonia</span></h1>
 
-            <p class="mt-3">
+            <h2>
+              Saya adalah <span id="typing"></span><span class="cursor">|</span>
+            </h2>
+
+            <p>
               Mahasiswa Teknik Informatika yang tertarik pada Web Development,
               Data Analysis, dan Cyber Security.
             </p>
 
-            <div class="social mt-4">
+            <!-- SOCIAL MEDIA -->
+
+            <div class="social-icons">
               <a href="#"><i class="bi bi-github"></i></a>
+
               <a href="#"><i class="bi bi-linkedin"></i></a>
+
               <a href="#"><i class="bi bi-instagram"></i></a>
+
               <a href="#"><i class="bi bi-envelope"></i></a>
             </div>
           </div>
 
-          <div class="col-md-6 text-center">
+          <!-- FOTO -->
+
+          <div class="col-lg-6 text-center">
             <div class="photo-wrapper">
               <div class="blob"></div>
 
-              <img src="img/foto-nbg2.png" class="profile" />
+              <img src="img/foto-nbg2.png" class="profile-img" alt="Antonia" />
             </div>
           </div>
         </div>
@@ -97,9 +67,9 @@
 
     <!-- SKILLS -->
 
-    <section id="skills">
+    <section class="skills">
       <div class="container">
-        <h2 class="text-center mb-5">Skills</h2>
+        <h2 class="section-title">Skills</h2>
 
         <div class="skill">
           <p>Python</p>
@@ -117,79 +87,39 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECT -->
 
-    <section id="projects" class="bg-light">
+    <section class="projects">
       <div class="container">
-        <h2 class="text-center mb-5">Projects</h2>
+        <h2 class="section-title">Projects</h2>
 
-        <div class="row g-4">
+        <div class="row">
           <div class="col-md-4">
-            <div class="card project">
-              <img src="img/foto.png" class="card-img-top" />
+            <div class="project-card">
+              <img src="img/project1.jpg" />
 
-              <div class="card-body">
-                <h5>Secure Login System</h5>
+              <h4>Portfolio Website</h4>
 
-                <p>Login dengan OTP dan password hashing.</p>
-
-                <a href="#" class="btn btn-dark btn-sm">GitHub</a>
-              </div>
+              <p>Website portfolio responsive menggunakan HTML CSS JS.</p>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="card project">
-              <img src="img/foto.png" class="card-img-top" />
+            <div class="project-card">
+              <img src="img/project2.jpg" />
 
-              <div class="card-body">
-                <h5>Portfolio Website</h5>
+              <h4>Secure Login</h4>
 
-                <p>Website portfolio responsive.</p>
-
-                <a href="#" class="btn btn-dark btn-sm">GitHub</a>
-              </div>
+              <p>Sistem login dengan hashing password.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATE -->
-
-    <section id="certificates">
-      <div class="container text-center">
-        <h2 class="mb-5">Certificates</h2>
-
-        <div class="row g-4 justify-content-center">
-          <div class="col-md-4">
-            <div class="card p-3">Cyber Security Essentials – Cisco</div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card p-3">Belajar Dasar Pemrograman Web – Dicoding</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="bg-light text-center">
-      <div class="container">
-        <h2 class="mb-4">Contact</h2>
-
-        <p>Email : buderianty31@gmail.com</p>
-
-        <p>GitHub : github.com/antoniafebrianti</p>
-      </div>
-    </section>
-
-    <footer>© 2026 Antonia</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <footer>
+      <p>© 2026 Antonia Febrianti</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
