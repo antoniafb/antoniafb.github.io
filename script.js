@@ -1,8 +1,8 @@
 const words = [
-  "Web Developer",
-  "Data Analyst",
-  "Cyber Security Enthusiast",
-  "Tech Explorer",
+  "Web Developer ",
+  "Data Analyst ",
+  "Cyber Security Enthusiast ",
+  "Tech Explorer ",
 ];
 
 let wordIndex = 0;
