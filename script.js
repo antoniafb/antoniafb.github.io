@@ -1,41 +1,40 @@
-AOS.init({
-  duration: 1000,
-});
+const words = [
+  "Web Developer",
+  "Data Analyst",
+  "Cyber Security Enthusiast",
+  "Tech Explorer",
+];
 
-const words = ["Web Developer ", "Data Analyst ", "Cyber Security Enthusiast "];
-
-let i = 0;
-let j = 0;
-let current = "";
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = "";
 let isDeleting = false;
 
-function type() {
-  current = words[i];
+function typeEffect() {
+  currentWord = words[wordIndex];
 
-  document.getElementById("typing").textContent = current.substring(0, j);
+  let displayText;
 
-  if (!isDeleting) {
-    j++;
-    if (j > current.length) {
-      isDeleting = true;
-      setTimeout(type, 1200);
-      return;
-    }
+  if (isDeleting) {
+    displayText = currentWord.substring(0, charIndex--);
   } else {
-    j--;
-    if (j == 0) {
-      isDeleting = false;
-      i = (i + 1) % words.length;
-    }
+    displayText = currentWord.substring(0, charIndex++);
   }
 
-  setTimeout(type, isDeleting ? 50 : 100);
+  document.getElementById("typing").textContent = displayText;
+
+  let speed = isDeleting ? 50 : 100;
+
+  if (!isDeleting && charIndex === currentWord.length) {
+    speed = 1500;
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+    speed = 500;
+  }
+
+  setTimeout(typeEffect, speed);
 }
 
-type();
-
-/* DARK MODE */
-
-document.getElementById("darkToggle").onclick = function () {
-  document.body.classList.toggle("dark");
-};
+typeEffect();
