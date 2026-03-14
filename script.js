@@ -1,10 +1,8 @@
-// AOS Animation
 AOS.init({
   duration: 1000,
   once: true,
 });
 
-// Typing Animation
 const words = [
   "Web Developer",
   "Data Analyst",
@@ -44,5 +42,4 @@ function typeEffect() {
   setTimeout(typeEffect, speed);
 }
 
-// Jalankan setelah halaman load
 document.addEventListener("DOMContentLoaded", typeEffect);
