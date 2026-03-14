@@ -1,13 +1,10 @@
-body {
+html {
   scroll-behavior: smooth;
 }
 
-/* SECTION */
 section {
   padding: 80px 0;
 }
-
-/* HERO SECTION */
 
 .hero-section {
   padding: 140px 0 100px;
@@ -32,7 +29,24 @@ section {
   font-weight: bold;
 }
 
-/* SOCIAL MEDIA */
+#typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* SOCIAL */
 
 .social-icons a {
   font-size: 24px;
@@ -48,18 +62,25 @@ section {
 
 /* FOTO */
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .photo-wrapper {
   position: relative;
-  display: inline-block;
+  width: 300px;
+  height: 300px;
 }
 
 .profile-img {
-  width: 260px;
-  position: relative;
+  width: 100%;
   z-index: 2;
+  position: relative;
 }
 
-/* BLOB BACKGROUND */
+/* BLOB */
 
 .blob {
   position: absolute;
@@ -72,8 +93,6 @@ section {
   z-index: 1;
   animation: blobMove 8s infinite ease-in-out;
 }
-
-/* BLOB ANIMATION */
 
 @keyframes blobMove {
   0% {
@@ -89,13 +108,13 @@ section {
   }
 }
 
-/* PROJECT CARD */
+/* CARD */
 
 .project-card,
 .cert-card {
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .project-card:hover,
@@ -104,8 +123,6 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* FOOTER */
-
 footer {
   background: #f8f9fa;
   text-align: center;
@@ -113,13 +130,7 @@ footer {
   margin-top: 50px;
 }
 
-/* RESPONSIVE */
-
 @media (max-width: 768px) {
-  section {
-    padding: 60px 0;
-  }
-
   .hero-text h1 {
     font-size: 36px;
   }
