@@ -6,11 +6,45 @@ body {
 
 /* HERO */
 
+.navbar {
+  background: linear-gradient(135deg, #ff0095, #ffa21f);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* warna tulisan navbar */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 500;
+}
+#darkToggle {
+  background-color: white;
+  color: #ff0095;
+  border-color: white;
+}
+
+#darkToggle:hover {
+  background-color: black;
+  color: #ffa21f;
+  border-color: black;
+}
+
+/* hover menu */
+.navbar .nav-link:hover {
+  color: #ffd43b !important;
+  transition: 0.3s;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  background: linear-gradient(135deg, #ff0095, #ffa21f);
   color: white;
   padding: 40px 0;
 }
@@ -44,19 +78,22 @@ body {
 
 .social-icons a:hover {
   transform: scale(1.2);
+  color: #ffd43b;
 }
 
 /* FOTO */
 
 .photo-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 320px;
-  width: 100%;
+  margin: auto;
 }
 
 .profile-img {
-  width: 100%;
+  width: 90%;
   height: auto;
   position: relative;
   z-index: 2;
@@ -67,12 +104,12 @@ body {
 .blob {
   position: absolute;
   width: 110%;
-  height: 110%;
+  height: 100%;
   background: white;
   border-radius: 55% 45% 60% 40%;
   top: -5%;
   left: -5%;
-  z-index: 1;
+  z-index: 0;
   animation: blobMove 8s infinite ease-in-out;
 }
 
