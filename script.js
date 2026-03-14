@@ -1,7 +1,7 @@
 const words = [
   " Web Developer ",
   " Data Analyst ",
-  " Cyber Security Enthusiast ",
+  " Cyber Security ",
   " Tech Explorer ",
 ];
 
