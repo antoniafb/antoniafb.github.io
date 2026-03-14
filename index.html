@@ -6,29 +6,26 @@
 
     <title>Antonia | Portfolio</title>
 
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
 
-    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Navbar -->
+    <!-- NAVBAR -->
 
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
     >
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Antonia</a>
@@ -36,82 +33,62 @@
         <button
           class="navbar-toggler"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="#nav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Keahlian</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Proyek</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#certificates">Sertifikat</a>
+              <a class="nav-link" href="#certificates">Certificates</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
+
+          <button id="darkToggle" class="btn btn-sm btn-outline-dark ms-3">
+            <i class="bi bi-moon"></i>
+          </button>
         </div>
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
 
-    <section id="hero" class="hero-section">
+    <section class="hero">
       <div class="container">
         <div class="row align-items-center">
-          <!-- TEXT -->
+          <div class="col-md-6">
+            <h1 class="fw-bold">Hi, I'm <span class="name">Antonia</span></h1>
 
-          <div class="col-md-6 hero-text">
-            <h1 class="fw-bold">Hi, Saya <span class="name">Antonia</span></h1>
-
-            <h3>Saya adalah <span id="typing"></span></h3>
+            <h3>I am <span id="typing"></span></h3>
 
             <p class="mt-3">
-              Mahasiswa Teknik Informatika yang memiliki ketertarikan pada Web
-              Development, Data Analysis, dan Cyber Security. Saya senang
-              membangun sistem digital yang aman dan efisien.
+              Mahasiswa Teknik Informatika yang tertarik pada Web Development,
+              Data Analysis, dan Cyber Security.
             </p>
 
-            <!-- SOCIAL MEDIA -->
-
-            <div class="social-icons mt-4">
-              <a href="#">
-                <i class="bi bi-github"></i>
-              </a>
-
-              <a href="#">
-                <i class="bi bi-linkedin"></i>
-              </a>
-
-              <a href="#">
-                <i class="bi bi-instagram"></i>
-              </a>
-
-              <a href="mailto:buderianty31@gmail.com">
-                <i class="bi bi-envelope"></i>
-              </a>
+            <div class="social mt-4">
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-envelope"></i></a>
             </div>
           </div>
 
-          <!-- FOTO -->
-
-          <div class="col-md-6 hero-image text-center">
+          <div class="col-md-6 text-center">
             <div class="photo-wrapper">
               <div class="blob"></div>
 
-              <img src="img/foto-nbg2.png" class="profile-img" />
+              <img src="img/foto-nbg2.png" class="profile" />
             </div>
           </div>
         </div>
@@ -120,74 +97,77 @@
 
     <!-- SKILLS -->
 
-    <section id="skills" class="bg-light">
-      <div class="container text-center" data-aos="fade-up">
-        <h2 class="fw-bold mb-5">Keahlian</h2>
+    <section id="skills">
+      <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
 
-        <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card p-3">Python, PHP, JavaScript</div>
-          </div>
+        <div class="skill">
+          <p>Python</p>
+          <div class="bar"><div class="progress python"></div></div>
 
-          <div class="col-md-3">
-            <div class="card p-3">HTML, CSS, Laravel</div>
-          </div>
+          <p>JavaScript</p>
+          <div class="bar"><div class="progress js"></div></div>
 
-          <div class="col-md-3">
-            <div class="card p-3">MySQL</div>
-          </div>
+          <p>Web Development</p>
+          <div class="bar"><div class="progress web"></div></div>
 
-          <div class="col-md-3">
-            <div class="card p-3">Network Security, Ethical Hacking</div>
-          </div>
+          <p>Cyber Security</p>
+          <div class="bar"><div class="progress cyber"></div></div>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
 
-    <section id="projects" class="container">
-      <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Proyek</h2>
+    <section id="projects" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
 
-      <div class="row justify-content-center">
-        <div class="col-md-6" data-aos="zoom-in">
-          <div class="card project-card p-4">
-            <h4>Sistem Login Aman dengan OTP</h4>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card project">
+              <img src="img/project1.jpg" class="card-img-top" />
 
-            <p>
-              Mengembangkan sistem login web dengan verifikasi OTP berbasis
-              email untuk meningkatkan keamanan pengguna.
-            </p>
+              <div class="card-body">
+                <h5>Secure Login System</h5>
 
-            <p><strong>Teknologi:</strong> PHP, MySQL, PHPMailer</p>
+                <p>Login dengan OTP dan password hashing.</p>
 
-            <a href="#" class="btn btn-primary"> Lihat di GitHub </a>
+                <a href="#" class="btn btn-dark btn-sm">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card project">
+              <img src="img/project2.jpg" class="card-img-top" />
+
+              <div class="card-body">
+                <h5>Portfolio Website</h5>
+
+                <p>Website portfolio responsive.</p>
+
+                <a href="#" class="btn btn-dark btn-sm">GitHub</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
+    <!-- CERTIFICATE -->
 
-    <section id="certificates" class="bg-light">
+    <section id="certificates">
       <div class="container text-center">
-        <h2 class="fw-bold mb-5" data-aos="fade-up">Sertifikat</h2>
+        <h2 class="mb-5">Certificates</h2>
 
-        <div class="row justify-content-center g-3">
-          <div class="col-md-5" data-aos="flip-left">
-            <div class="card cert-card p-3">
-              <p class="fw-bold">
-                Cyber Security Essentials – Cisco Networking Academy (2025)
-              </p>
-            </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card p-3">Cyber Security Essentials – Cisco</div>
           </div>
 
-          <div class="col-md-5" data-aos="flip-right">
-            <div class="card cert-card p-3">
-              <p class="fw-bold">
-                Belajar Dasar Pemrograman Web – Dicoding (2024)
-              </p>
-            </div>
+          <div class="col-md-4">
+            <div class="card p-3">Belajar Dasar Pemrograman Web – Dicoding</div>
           </div>
         </div>
       </div>
@@ -195,26 +175,17 @@
 
     <!-- CONTACT -->
 
-    <section id="contact" class="container text-center" data-aos="fade-up">
-      <h2 class="fw-bold mb-4">Kontak</h2>
+    <section id="contact" class="bg-light text-center">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
 
-      <p>
-        Email:
-        <a href="mailto:buderianty31@gmail.com">buderianty31@gmail.com</a>
-      </p>
+        <p>Email : buderianty31@gmail.com</p>
 
-      <p>LinkedIn: linkedin.com/in/antoniafebrianti</p>
-
-      <p>GitHub: github.com/antoniafebrianti</p>
+        <p>GitHub : github.com/antoniafebrianti</p>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-
-    <footer>
-      <p>© 2026 Antonia Febrianti</p>
-    </footer>
-
-    <!-- JS -->
+    <footer>© 2026 Antonia</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
