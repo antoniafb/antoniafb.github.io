@@ -2,7 +2,7 @@ AOS.init({
   duration: 1000,
 });
 
-const words = ["Web Developer", "Data Analyst", "Cyber Security Enthusiast"];
+const words = ["Web Developer ", "Data Analyst ", "Cyber Security Enthusiast "];
 
 let i = 0;
 let j = 0;
