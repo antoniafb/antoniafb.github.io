@@ -128,8 +128,12 @@ body {
 }
 
 /* CURSOR KETIK */
+#typing {
+  color: #ffd43b;
+}
 
 .cursor {
+  color: #ffd43b;
   display: inline-block;
   margin-left: 5px;
   font-weight: bold;
