@@ -8,20 +8,19 @@ p {
   line-height: 1.6;
 }
 
-/* HERO */
-
+/* NAVBAR */
 .navbar {
   background: linear-gradient(135deg, #ff0095, #ffa21f);
   padding: 15px 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* warna tulisan navbar */
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: white !important;
   font-weight: 500;
 }
+
 #darkToggle {
   background-color: white;
   color: #ff0095;
@@ -34,7 +33,6 @@ p {
   border-color: black;
 }
 
-/* hover menu */
 .navbar .nav-link:hover {
   color: #ffd43b !important;
   transition: 0.3s;
@@ -44,6 +42,7 @@ p {
   border: none;
 }
 
+/* HERO */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -57,13 +56,14 @@ p {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bold;
 }
-.hero-text p {
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-}
 
 .hero-text h2 {
   font-size: clamp(1.4rem, 3vw, 2rem);
   margin-top: 10px;
+}
+
+.hero-text p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 .name {
@@ -71,7 +71,6 @@ p {
 }
 
 /* SOCIAL */
-
 .social-icons {
   margin-top: 20px;
 }
@@ -89,7 +88,6 @@ p {
 }
 
 /* FOTO */
-
 .photo-wrapper {
   position: relative;
   display: flex;
@@ -106,8 +104,7 @@ p {
   z-index: 2;
 }
 
-/* BLOB BACKGROUND FOTO */
-
+/* BLOB */
 .blob {
   position: absolute;
   width: 110%;
@@ -124,17 +121,15 @@ p {
   0% {
     border-radius: 55% 45% 60% 40%;
   }
-
   50% {
     border-radius: 40% 60% 45% 55%;
   }
-
   100% {
     border-radius: 55% 45% 60% 40%;
   }
 }
 
-/* CURSOR KETIK */
+/* CURSOR */
 #typing {
   color: #ffd43b;
 }
@@ -159,36 +154,16 @@ p {
   }
 }
 
-/* SECTION SKILLS */
+/* SKILLS */
 #skills {
   padding: 80px 0;
 }
 
-/* Card skill */
-#skills .card {
-  border: none;
-  border-radius: 15px;
-  font-weight: 500;
-  background: white;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-/* Hover effect */
-#skills .card:hover {
-  transform: translateY(-10px) scale(1.03);
-  background: linear-gradient(135deg, #ff0095, #ffa21f);
-  color: white;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Judul */
 #skills h2 {
   color: #333;
   position: relative;
 }
 
-/* Garis bawah judul */
 #skills h2::after {
   content: "";
   display: block;
@@ -198,6 +173,29 @@ p {
   background: linear-gradient(135deg, #ff0095, #ffa21f);
   border-radius: 10px;
 }
+
+/* CARD */
+#skills .card {
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* HOVER (Laptop) */
+#skills .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: linear-gradient(135deg, #ff0095, #ffa21f);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ICON */
 #skills .card i {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   color: #ff0095;
@@ -208,6 +206,21 @@ p {
   color: white;
   transform: scale(1.2);
 }
+
+/* FIX HOVER DI HP */
+@media (hover: none) {
+  #skills .card:active {
+    transform: scale(0.97);
+    background: linear-gradient(135deg, #ff0095, #ffa21f);
+    color: white;
+  }
+
+  #skills .card:active i {
+    color: white;
+    transform: scale(1.2);
+  }
+}
+
 /* TABLET */
 @media (max-width: 992px) {
   .hero {
@@ -271,11 +284,6 @@ p {
 
   #skills .card {
     padding: 15px;
-    font-size: 14px;
-  }
-
-  #skills .card i {
-    font-size: 2rem;
   }
 }
 
@@ -296,10 +304,5 @@ p {
 
   #skills .card {
     padding: 12px;
-    font-size: 13px;
-  }
-
-  #skills .card i {
-    font-size: 1.8rem;
   }
 }
