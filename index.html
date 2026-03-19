@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Antonia Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -38,15 +37,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
           </ul>
 
           <button id="darkToggle" class="btn btn-sm ms-3">
@@ -60,7 +50,6 @@
     <section class="hero">
       <div class="container">
         <div class="row align-items-center">
-          <!-- TEXT -->
           <div class="col-lg-6 hero-text">
             <h1>Hi, Saya <span class="name">Antonia</span></h1>
 
@@ -73,32 +62,12 @@
               Mahasiswa Teknik Informatika yang tertarik pada Web Development,
               Data Analysis, dan Cyber Security.
             </p>
-
-            <!-- SOCIAL -->
-            <div class="social-icons">
-              <a href="https://github.com/antoniafb">
-                <i class="bi bi-github"></i>
-              </a>
-
-              <a href="https://id.linkedin.com/in/antonia-febrianti-bude">
-                <i class="bi bi-linkedin"></i>
-              </a>
-
-              <a href="https://www.instagram.com/ribzy.rib/">
-                <i class="bi bi-instagram"></i>
-              </a>
-
-              <a href="mailto:buderianty31@gmail.com">
-                <i class="bi bi-envelope"></i>
-              </a>
-            </div>
           </div>
 
-          <!-- FOTO -->
           <div class="col-lg-6 text-center mt-4 mt-lg-0">
             <div class="photo-wrapper">
               <div class="blob"></div>
-              <img src="img/foto-nbg2.png" class="profile-img" alt="Antonia" />
+              <img src="img/foto-nbg2.png" class="profile-img" />
             </div>
           </div>
         </div>
@@ -111,74 +80,38 @@
         <h2 class="fw-bold mb-5">Keahlian</h2>
 
         <div class="row g-4">
-          <!-- 1 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-code-slash mb-2"></i>
-              <p>Python<br />PHP<br />JavaScript</p>
+          <!-- SKILL ITEM -->
+          <div class="col-12 col-md-3">
+            <div class="card skill-card">
+              <i class="bi bi-code-slash"></i>
+              <p>Python, PHP, JavaScript</p>
             </div>
           </div>
 
-          <!-- 2 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-globe mb-2"></i>
-              <p>HTML<br />CSS<br />Laravel</p>
+          <div class="col-12 col-md-3">
+            <div class="card skill-card">
+              <i class="bi bi-globe"></i>
+              <p>HTML, CSS, Laravel</p>
             </div>
           </div>
 
-          <!-- 3 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-database mb-2"></i>
+          <div class="col-12 col-md-3">
+            <div class="card skill-card">
+              <i class="bi bi-database"></i>
               <p>MySQL</p>
             </div>
           </div>
 
-          <!-- 4 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-shield-lock mb-2"></i>
-              <p>Network Security<br />Ethical Hacking</p>
-            </div>
-                      <!-- 1 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-code-slash mb-2"></i>
-              <p>Python<br />PHP<br />JavaScript</p>
-            </div>
-          </div>
-
-          <!-- 2 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-globe mb-2"></i>
-              <p>HTML<br />CSS<br />Laravel</p>
-            </div>
-          </div>
-
-          <!-- 3 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-database mb-2"></i>
-              <p>MySQL</p>
-            </div>
-          </div>
-
-          <!-- 4 -->
-          <div class="col-6 col-md-3">
-            <div class="card p-3">
-              <i class="bi bi-shield-lock mb-2"></i>
-              <p>Network Security<br />Ethical Hacking</p>
+          <div class="col-12 col-md-3">
+            <div class="card skill-card">
+              <i class="bi bi-shield-lock"></i>
+              <p>Network Security, Ethical Hacking</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="script.js"></script>
-
-    <!-- Bootstrap JS (WAJIB biar navbar toggle jalan) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

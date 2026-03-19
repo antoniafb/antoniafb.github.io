@@ -11,35 +11,11 @@ p {
 /* NAVBAR */
 .navbar {
   background: linear-gradient(135deg, #ff0095, #ffa21f);
-  padding: 15px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: white !important;
-  font-weight: 500;
-}
-
-#darkToggle {
-  background-color: white;
-  color: #ff0095;
-  border-color: white;
-}
-
-#darkToggle:hover {
-  background-color: black;
-  color: #ffa21f;
-  border-color: black;
-}
-
-.navbar .nav-link:hover {
-  color: #ffd43b !important;
-  transition: 0.3s;
-}
-
-.navbar-toggler {
-  border: none;
 }
 
 /* HERO */
@@ -49,17 +25,14 @@ p {
   align-items: center;
   background: linear-gradient(135deg, #ff0095, #ffa21f);
   color: white;
-  padding: 40px 0;
 }
 
 .hero-text h1 {
   font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: bold;
 }
 
 .hero-text h2 {
   font-size: clamp(1.4rem, 3vw, 2rem);
-  margin-top: 10px;
 }
 
 .hero-text p {
@@ -70,88 +43,25 @@ p {
   color: #ffd43b;
 }
 
-/* SOCIAL */
-.social-icons {
-  margin-top: 20px;
-}
-
-.social-icons a {
-  font-size: 26px;
-  margin-right: 15px;
-  color: white;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #ffd43b;
-}
-
 /* FOTO */
 .photo-wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 320px;
+  max-width: 300px;
   margin: auto;
 }
 
 .profile-img {
-  width: 90%;
-  height: auto;
-  position: relative;
+  width: 100%;
   z-index: 2;
+  position: relative;
 }
 
-/* BLOB */
 .blob {
   position: absolute;
   width: 110%;
   height: 100%;
   background: white;
   border-radius: 55% 45% 60% 40%;
-  top: -5%;
-  left: -5%;
-  z-index: 0;
-  animation: blobMove 8s infinite ease-in-out;
-}
-
-@keyframes blobMove {
-  0% {
-    border-radius: 55% 45% 60% 40%;
-  }
-  50% {
-    border-radius: 40% 60% 45% 55%;
-  }
-  100% {
-    border-radius: 55% 45% 60% 40%;
-  }
-}
-
-/* CURSOR */
-#typing {
-  color: #ffd43b;
-}
-
-.cursor {
-  color: #ffd43b;
-  display: inline-block;
-  margin-left: 5px;
-  font-weight: bold;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* SKILLS */
@@ -159,65 +69,52 @@ p {
   padding: 80px 0;
 }
 
-#skills h2 {
-  color: #333;
-  position: relative;
-}
-
 #skills h2::after {
   content: "";
   display: block;
   width: 60px;
   height: 4px;
-  margin: 10px auto 0;
+  margin: 10px auto;
   background: linear-gradient(135deg, #ff0095, #ffa21f);
-  border-radius: 10px;
 }
 
 /* CARD */
-#skills .card {
-  border: none;
-  border-radius: 15px;
-  font-weight: 500;
-  background: white;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  font-size: clamp(0.8rem, 2vw, 1rem);
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
   padding: 20px;
-  cursor: pointer;
-}
-
-/* HOVER (Laptop) */
-#skills .card:hover {
-  transform: translateY(-10px) scale(1.03);
-  background: linear-gradient(135deg, #ff0095, #ffa21f);
-  color: white;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* ICON */
-#skills .card i {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  color: #ff0095;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-#skills .card:hover i {
-  color: white;
-  transform: scale(1.2);
+/* ICON */
+.skill-card i {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: #ff0095;
+  margin-bottom: 10px;
 }
 
-/* FIX HOVER DI HP */
+/* HOVER DESKTOP */
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #ff0095, #ffa21f);
+  color: white;
+}
+
+.skill-card:hover i {
+  color: white;
+}
+
+/* TAP HP */
 @media (hover: none) {
-  #skills .card:active {
-    transform: scale(0.97);
+  .skill-card:active {
     background: linear-gradient(135deg, #ff0095, #ffa21f);
     color: white;
-  }
-
-  #skills .card:active i {
-    color: white;
-    transform: scale(1.2);
   }
 }
 
@@ -225,84 +122,22 @@ p {
 @media (max-width: 992px) {
   .hero {
     text-align: center;
-    padding: 60px 20px;
-  }
-
-  .hero-text {
-    margin-bottom: 40px;
-  }
-
-  .photo-wrapper {
-    max-width: 260px;
-  }
-
-  .social-icons a {
-    font-size: 22px;
-  }
-
-  #skills {
-    padding: 70px 20px;
   }
 }
 
 /* HP */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 10px 0;
+  .skill-card {
+    flex-direction: row;
+    text-align: left;
+    gap: 15px;
+  }
+
+  .skill-card i {
+    margin-bottom: 0;
   }
 
   .hero {
-    min-height: auto;
-    padding: 80px 20px 40px;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.3rem;
-  }
-
-  .photo-wrapper {
-    max-width: 220px;
-  }
-
-  .blob {
-    width: 100%;
-    height: 100%;
-  }
-
-  .social-icons a {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-
-  #skills {
-    padding: 60px 15px;
-  }
-
-  #skills .card {
-    padding: 15px;
-  }
-}
-
-/* HP KECIL */
-@media (max-width: 576px) {
-  .hero-text h1 {
-    font-size: 1.7rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1.1rem;
-  }
-
-  .social-icons {
-    display: flex;
-    justify-content: center;
-  }
-
-  #skills .card {
-    padding: 12px;
+    padding: 80px 20px;
   }
 }
