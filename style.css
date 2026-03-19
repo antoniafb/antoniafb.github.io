@@ -152,6 +152,46 @@ body {
   }
 }
 
+/* SECTION SKILLS */
+#skills {
+  padding: 80px 0;
+}
+
+/* Card skill */
+#skills .card {
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  background: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover effect */
+#skills .card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: linear-gradient(135deg, #ff0095, #ffa21f);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul */
+#skills h2 {
+  color: #333;
+  position: relative;
+}
+
+/* Garis bawah judul */
+#skills h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(135deg, #ff0095, #ffa21f);
+  border-radius: 10px;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
